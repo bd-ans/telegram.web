@@ -25,3 +25,27 @@ body {
   font-size: 16px;
   background-color: #ffffff;
 }
+
+.bg-background-color {
+  background-color: #F4F4F4;
+}
+
+.header-left-inner__input {
+  outline: none;
+  border-radius: 8px;
+  padding: 7px 0;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: -0.0521739px;
+  height: 40px;
+}
+
+.btn-hover:hover rect { 
+  fill: #2481CC;
+  transition: .2s ease;
+}
+
+.btn-hover:hover path { 
+  fill: #ffffff;
+  transition: .2s ease;
+}
