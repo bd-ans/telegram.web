@@ -48,8 +48,8 @@ body {
   height: 29px;
   line-height: 15px;
   margin-right: 14px;
-  padding-left: 20px;
-  padding-right: 31px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .header-inner {
@@ -94,5 +94,4 @@ body {
 .header-left-inner-btn {
   width: 38px;
   height: 29px;
-  padding: 0 !important;
 }
