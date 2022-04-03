@@ -219,7 +219,41 @@ body {
 .main-status-time-box__pin-img {
   margin-bottom: 7px;
 }
+/* FOOTER */
 
+.test {
+  bottom: 0;
+}
+
+.footer-left-inner-btn:first-child .footer-left-inner-btn__img:hover circle {
+  stroke: #2481CC;
+  transition: .3s ease;
+}
+
+.footer-left-inner-btn:first-child .footer-left-inner-btn__img:hover path {
+  fill: #2481CC;
+  transition: .3s ease;
+}
+
+.footer-left-inner-btn:nth-child(2) .footer-left-inner-btn__img:hover path {
+  fill: #999999;
+  transition: .3s ease;
+}
+
+.footer-left-inner-btn:nth-child(3) .footer-left-inner-btn__img:hover path {
+  stroke: #2481CC;
+  fill: #2481CC;
+  transition: all .1s ease-in-out;
+}
+
+.footer-left-inner-btn:nth-child(3) .footer-left-inner-btn__img:hover circle {
+  stroke: #2481CC;
+  transition: .3s ease;
+}
+
+.footer-inner{
+  height: 53px;
+}
 @media (max-width: 1390px) {
   .header-left-inner-time {
     margin-left: calc(53%);
