@@ -95,3 +95,19 @@ body {
   width: 38px;
   height: 29px;
 }
+
+.header-main__canel-button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: -0.0608696px;
+  color: #2481CC;
+  height: 15px;
+  opacity: 1;
+}
+
+.btn-opacity:hover {
+  opacity: .8;
+}
