@@ -254,6 +254,21 @@ body {
 .footer-inner{
   height: 53px;
 }
+
+.main {
+  height: 100vh;
+}
+
+.pro,
+.main-inner,
+.main-left,
+.main-right {
+  height: 100%;
+}
+
+
+
+
 @media (max-width: 1390px) {
   .header-left-inner-time {
     margin-left: calc(53%);
