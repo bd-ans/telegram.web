@@ -149,7 +149,7 @@ body {
 
 .user:hover {
   background-color: #e6e6e6;
-  transition: .2s ease-in-out;
+  transition: .1s ease-in-out;
 }
 
 .user-main-status-info__user-name {
@@ -173,7 +173,6 @@ body {
 }
 
 .user-main-status-info__user-message {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 13px;
