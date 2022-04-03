@@ -152,7 +152,13 @@ body {
   transition: .1s ease-in-out;
 }
 
-.user-main-status-info__user-name {
+.user-main-status {
+  border-color: #EAEAEA !important;
+}
+
+.user-main-status-info__user-name,
+.user-main-status-info__user-goup-name,
+.user-main-status-info__user-message {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -163,22 +169,15 @@ body {
 }
 
 .user-main-status-info__user-goup-name {
-  font-weight: 400;
   font-size: 13px;
   line-height: 16px;
-  display: flex;
-  align-items: flex-end;
   letter-spacing: -0.0565218px;
-  color: #333333;
 }
 
 .user-main-status-info__user-message {
-  font-style: normal;
   font-weight: 700;
   font-size: 13px;
   line-height: 15px;
-  display: flex;
-  align-items: flex-end;
   letter-spacing: -0.0565218px;
   color: #999999;
 }
