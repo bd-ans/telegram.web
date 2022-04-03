@@ -96,6 +96,24 @@ body {
   height: 29px;
 }
 
+.header-main {
+  position: relative;
+}
+
+.header-left-inner-time {
+  position: absolute;
+  margin-left: calc(55%);
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  letter-spacing: -0.0521739px;
+  color: #A9A9A9;
+}
+
 .header-main__canel-button,
 .header-main-other-opiopns__edit-btn {
   font-size: 14px;
@@ -200,4 +218,10 @@ body {
 
 .main-status-time-box__pin-img {
   margin-bottom: 7px;
+}
+
+@media (max-width: 1200px) {
+  .header-left-inner-time {
+    margin-left: calc(50% - 50.35px);
+  }
 }
