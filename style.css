@@ -19,6 +19,14 @@
   src: "../fonts/source-sans-pro-v19-latin-700.woff2" format("woff2"), url("../fonts/source-sans-pro-v19-latin-700.woff") format("woff");
 }
 
+.cursor-default {
+  cursor: default !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
 body {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
@@ -30,7 +38,7 @@ body {
   background-color: #F4F4F4;
 }
 
-.header-left-inner__input {
+.header-left-inner__search-input {
   outline: none;
   border-radius: 8px;
   padding: 7px 0;
@@ -38,6 +46,12 @@ body {
   font-size: 12px;
   letter-spacing: -0.0521739px;
   height: 29px;
+  line-height: 15px;
+  margin-right: 14px;
+}
+
+.header-left-inner__search-input::placeholder {
+  color: #aeaeae;
 }
 
 .header-inner {
@@ -52,4 +66,10 @@ body {
 .btn-hover:hover path { 
   fill: #ffffff;
   transition: .2s ease;
+}
+
+.header-left-inner-btn {
+  width: 38px;
+  height: 29px;
+  padding: 0 !important;
 }
