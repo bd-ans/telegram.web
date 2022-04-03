@@ -119,3 +119,85 @@ body {
 .header-main-other-opiopns-search-btn {
   margin-right: 28px !important;
 }
+
+.main {
+  padding-top: 47px;
+}
+
+.main-bg {
+  background-color: #F7F7F7;
+}
+
+
+.main-status-time-box {
+  position: relative;
+}
+
+.main-status-time-box__pin-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* USER */
+
+.user {
+  height: 65px;
+  margin-left: -12px !important;
+  margin-right: -12px !important;
+  padding: 0 12px;
+}
+
+.user:hover {
+  background-color: #e6e6e6;
+  transition: .2s ease-in-out;
+}
+
+.user-main-status-info__user-name {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: -0.0608696px;
+  color: #333333;
+}
+
+.user-main-status-info__user-goup-name {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: -0.0565218px;
+  color: #333333;
+}
+
+.user-main-status-info__user-message {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: -0.0565218px;
+  color: #999999;
+}
+
+.user-main-status {
+  margin-left: 10px;
+  margin-right: -12px;
+  padding-bottom: 7px;
+  margin-bottom: -8px;
+}
+
+.main-top-status-time-box__send-time {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: -0.0521739px;
+  color: #999999;
+}
