@@ -222,6 +222,6 @@ body {
 
 @media (max-width: 1200px) {
   .header-left-inner-time {
-    margin-left: calc(50% - 50.35px);
+    margin-left: calc(45% - 50.35px);
   }
 }
