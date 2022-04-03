@@ -285,7 +285,7 @@
                 <svg class="footer-right-box-btn__img cursor-pointer" width="23" height="23" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11.5" cy="11.5" r="10.5" stroke="#108FE4"/><ellipse cx="8.5" cy="9" rx="1.5" ry="2" fill="#108FE4"/><ellipse cx="14.5" cy="9" rx="1.5" ry="2" fill="#108FE4"/><path clip-rule="evenodd" d="M5.17 13.116h12.852s-2.566 4.959-6.63 4.959c-4.063 0-6.222-4.959-6.222-4.959Z" stroke="#108FE4"/></svg>
               </button>
               <button class="footer-right-box-btn cursor-default rounded-circle bg-transparent border-0">
-                <svg class="footer-right-box-btn__img cursor-pointer" width="17" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 8v4.231C16 15.97 12.837 19 8.94 19h-.88C4.162 19 1 15.966 1 12.231V8" stroke="#979797"/><rect x="4.5" y="1.5" width="8" height="14" rx="2.5" stroke="#979797"/><path d="M8.648 18.68v5.11" stroke="#979797"/></svg>            
+                <svg class="footer-right-box-btn__img cursor-pointer" id="send__btn" width="17" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 8v4.231C16 15.97 12.837 19 8.94 19h-.88C4.162 19 1 15.966 1 12.231V8" stroke="#979797"/><rect x="4.5" y="1.5" width="8" height="14" rx="2.5" stroke="#979797"/><path d="M8.648 18.68v5.11" stroke="#979797"/></svg>            
               </button>
             </div>
           </div>
@@ -334,23 +334,24 @@
     </div>
   </footer>
 
-  
+  <!-- <script>
+    let input = document.getElementById("message");
+    let send__btn = document.getElementById("send__btn");
+
+    // send__btn.style.display = "block";
+    // input.value.length > 0;
+
+    send__btn.style.display = "block"
 
 
-  <!-- <div class="d-flex align-items-start">
-    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-      <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
-      <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
-      <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
-      <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
-    </div>
-    <div class="tab-content" id="v-pills-tabContent">
-      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">.rthrvth..</div>
-      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">.ggvgvt..</div>
-      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">.ggg..</div>
-      <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">..trhyjmuk.</div>
-    </div>
-  </div> -->
+    if (input.onmousemove) {
+      send__btn.style.display = "none";
+    } else {
+      send__btn.style.display = "block";
+    }
+    
+
+  </script> -->
 
   <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="./bootstrap/js/bootstrap.min.js"></script>
