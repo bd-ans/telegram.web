@@ -220,8 +220,14 @@ body {
   margin-bottom: 7px;
 }
 
+@media (max-width: 1390px) {
+  .header-left-inner-time {
+    margin-left: calc(53%);
+  }
+}
+
 @media (max-width: 1200px) {
   .header-left-inner-time {
-    margin-left: calc(45% - 50.35px);
+    margin-left: calc(46% - 50.35px);
   }
 }
