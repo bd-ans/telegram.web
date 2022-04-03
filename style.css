@@ -128,7 +128,6 @@ body {
   background-color: #F7F7F7;
 }
 
-
 .main-status-time-box {
   position: relative;
 }
@@ -186,10 +185,9 @@ body {
 }
 
 .user-main-status {
+  height: 57px;
   margin-left: 10px;
   margin-right: -12px;
-  padding-bottom: 7px;
-  margin-bottom: -8px;
 }
 
 .main-top-status-time-box__send-time {
@@ -197,7 +195,11 @@ body {
   font-size: 12px;
   line-height: 15px;
   display: flex;
-  align-items: flex-end;
   letter-spacing: -0.0521739px;
   color: #999999;
+  display: inline;
+}
+
+.main-status-time-box__pin-img {
+  margin-bottom: 7px;
 }
