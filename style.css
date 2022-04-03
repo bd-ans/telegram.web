@@ -48,21 +48,18 @@ body {
   height: 29px;
   line-height: 15px;
   margin-right: 14px;
-  position: relative;
-}
-
-.header-left-inner__search-input::placeholder {
-  color: #aeaeae;
+  padding-left: 20px;
+  padding-right: 31px;
 }
 
 .header-inner {
   height: 47px;
 }
 
-
 .header-left-inner {
   position: relative;
 }
+
 .header-left-inner__search-input::placeholder {
   position: absolute;
   display: flex !important;
@@ -73,6 +70,15 @@ body {
   left: 0;
   right: 0;
   background-position-x: calc(50% - 30px);
+  color: #aeaeae;
+}
+
+.header-left-inner__search-input:focus {
+  background-image: url("./img/cancel-close.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position-x: calc(100% - 10px);
+  background-position-y: calc(50%);
 }
 
 .btn-hover:hover rect { 
