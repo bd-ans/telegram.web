@@ -40,7 +40,7 @@ body {
 
 .header-left-inner__search-input {
   outline: none;
-  border-radius: 8px;
+  border-radius: 8px !important;
   padding: 7px 0;
   font-weight: 400;
   font-size: 12px;
@@ -48,6 +48,7 @@ body {
   height: 29px;
   line-height: 15px;
   margin-right: 14px;
+  position: relative;
 }
 
 .header-left-inner__search-input::placeholder {
@@ -56,6 +57,22 @@ body {
 
 .header-inner {
   height: 47px;
+}
+
+
+.header-left-inner {
+  position: relative;
+}
+.header-left-inner__search-input::placeholder {
+  position: absolute;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background-image: url("./img/search-ico.svg");
+  background-repeat: no-repeat;
+  left: 0;
+  right: 0;
+  background-position-x: calc(50% - 30px);
 }
 
 .btn-hover:hover rect { 
