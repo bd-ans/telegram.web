@@ -91,6 +91,10 @@ body {
   transition: .2s ease;
 }
 
+.outline-none {
+  outline: none;
+}
+
 .header-left-inner-btn {
   width: 38px;
   height: 29px;
@@ -266,7 +270,21 @@ body {
   height: 100%;
 }
 
+.footer-form-message {
+  height: 30px;
+  resize: none;
+  border: none;
+  width: 100%;
+}
 
+.footer-form {
+  width: 100%;
+}
+
+.footer-main-inner {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
 
 
 @media (max-width: 1390px) {
