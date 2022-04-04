@@ -305,11 +305,12 @@ body {
 }
 
 .footer-l-svg path {
-  fill:#979797;
+  fill:#2481CC;
+  opacity: .8;
 }
 
 .footer-l-svg:hover path {
-  fill:#2481CC;
+  opacity: 1;
   transition: all .1s ease-in-out;
 }
 
