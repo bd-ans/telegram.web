@@ -300,23 +300,22 @@ body {
   font-weight: 700;
   color: #2481CC;
 }
-
-/* .footer-main-inner .footer-left-box .footer-form .footer-form-message:valid > .footer-main-inner {
-  background-color: #2481CC;
+.footer-l-svg {
+  display: none;
 }
 
-.footer-main-inner .footer-left-box .footer-form .footer-form-message:invalid > .footer-main-inner {
-  background-color: #ff0000;
-} */
-
-
-.none {
-  display: none !important;
+#textarea:valid + .footer-right-box .footer-right-box-btn:last-child .footer-right-box-btn__img:first-child{
+  display: none;
 }
 
-.block {
-  display: block !important;
+#textarea:valid + .footer-right-box .footer-right-box-btn:last-child .footer-right-box-btn__img:last-child{
+  display: block;
 }
+
+#textarea:invalid + .footer-right-box .footer-right-box-btn:last-child .footer-right-box-btn__img:first-child{
+  display: block;
+}
+
 
 @media (max-width: 1390px) {
   .header-left-inner-time {
