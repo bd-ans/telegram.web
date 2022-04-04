@@ -509,7 +509,6 @@ body::-webkit-scrollbar {
 }
 
 
-
 @media (max-width: 1390px) {
   .header-left-inner-time {
     margin-left: calc(53%);
