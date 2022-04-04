@@ -413,21 +413,32 @@ body::-webkit-scrollbar {
   overflow-x: hidden;
 }
 
-.main-left::-webkit-scrollbar {
+.main-left::-webkit-scrollbar,
+.main-center::-webkit-scrollbar {
   width: 4px;
 }
 
-.main-left::-webkit-scrollbar-track {
+.main-left::-webkit-scrollbar-track,
+.main-center::-webkit-scrollbar-track {
   background: transparent; 
 }
 
-.main-left::-webkit-scrollbar-thumb {
+.main-left::-webkit-scrollbar-thumb,
+.main-center::-webkit-scrollbar-thumb {
   background: #2480cc7f; 
   border-radius: 15px;
 }
 
-.main-left::-webkit-scrollbar-thumb:hover {
+.main-left::-webkit-scrollbar-thumb:hover,
+.main-center::-webkit-scrollbar-thumb:hover {
   background: #555; 
+}
+
+.main-center {
+  height: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding-bottom: 53px;
 }
 
 @media (max-width: 1390px) {
