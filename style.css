@@ -286,6 +286,88 @@ body::-webkit-scrollbar {
   height: 100vh;
 }
 
+/* START STYLING SMILES HOVER EFFECTS */
+
+.footer-f-svg:hover path,
+.footer-f-svg:hover rect {
+  stroke: #2481CC;
+  transition: all .1s ease-in-out;
+}
+
+.footer-sm-img:hover circle,
+.footer-sm-img:hover path {
+  stroke: #979797;
+  transition: all .1s ease-in-out;
+}
+
+.footer-sm-img:hover ellipse {
+  fill: #979797;
+  transition: all .1s ease-in-out;
+}
+
+.footer-clock-img:hover circle {
+  stroke: #979797;
+  transition: all .1s ease-in-out;
+}
+
+.footer-clock-img:hover path {
+  fill: #979797;
+  transition: all .1s ease-in-out;
+}
+
+.footer-cat-img:hover path:nth-child(2),
+.footer-cat-img:hover path:nth-child(4),
+.footer-cat-img:hover path:nth-child(6)  {
+  fill: #2481CC;
+  transition: all .1s ease-in-out;
+}
+
+.footer-cat-img:hover path:nth-child(5),
+.footer-cat-img:hover path:nth-child(7) {
+  stroke: #2481CC;
+  transition: all .1s ease-in-out;
+}
+
+.footer-food-img:hover path {
+  stroke: #2481CC;
+  transition: all .1s ease-in-out;
+}
+
+.footer-ball-img:hover path {
+  fill: #2481CC;
+  transition: all .1s ease-in-out;
+}
+
+.footer-car-img:hover path {
+  stroke: #2481CC;
+  transition: all .1s ease-in-out;
+}
+
+.footer-car-img:hover path:nth-child(2),
+.footer-car-img:hover path:nth-child(7) {
+  fill: #2481CC;
+  transition: all .1s ease-in-out;
+}
+
+.footer-car-img:hover ellipse {
+  fill: #2481CC;
+  transition: all .1s ease-in-out;
+}
+
+.footer-lamp-img:hover circle,
+.footer-lamp-img:hover path:nth-child(3),
+.footer-lamp-img:hover path:nth-child(4),
+.footer-lamp-img:hover path:nth-child(5) {
+  stroke: #2481CC;
+  transition: all .1s ease-in-out;
+}
+.footer-lamp-img:hover path:nth-child(2) {
+  fill: #2481CC;
+  transition: all .1s ease-in-out;
+}
+
+/* END STYLING SMILES HOVER EFFECTS */
+
 .pro,
 .main-inner,
 .main-left,
