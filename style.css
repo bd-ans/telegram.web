@@ -32,6 +32,17 @@ body {
   font-weight: 700;
   font-size: 16px;
   background-color: #ffffff;
+  height: 100%;
+  overflow: hidden;
+}
+
+body.is-preload * {
+  visibility: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+  display: none;
 }
 
 .bg-background-color {
@@ -342,7 +353,8 @@ body {
   height: 34px;
 }
 
-.right-title__title {
+.right-title__title,
+.righ-bottom-emoji-box-title__item {
   font-size: 13px;
   line-height: 16px;
   display: flex;
@@ -362,19 +374,11 @@ body {
   color: #2481CC;
 }
 
-/* .ttst {
-  width: 100%;
-  box-sizing: border-box;
-  margin-left: 5px;
-} */
-
 .right-top-emoji-box__img {
   width: 30px;
-  height: auto;
+  height: 30px;
   margin-left: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   margin-left: 0 !important;
   margin-right: 0 !important;
   cursor: pointer;
@@ -391,7 +395,17 @@ body {
   margin-right: 2px !important;
 }
 
+.righ-bottom-emoji-box__content {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-bottom: 100%;
+  height: 695px;
+  scroll-behavior: smooth;
+}
 
+.righ-bottom-emoji-box__content::-webkit-scrollbar {
+  width: 0;
+}
 
 
 @media (max-width: 1390px) {
