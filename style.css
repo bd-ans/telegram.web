@@ -333,6 +333,44 @@ body {
   display: block;
 }
 
+.right-title {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: -12px;
+  margin-right: -12px;
+  height: 34px;
+}
+
+.right-title__title {
+  font-size: 13px;
+  line-height: 16px;
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  letter-spacing: -0.0565218px;
+  color: #333333;
+}
+
+.right-title__subtitle {
+  font-size: 13px;
+  line-height: 16px;
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  letter-spacing: -0.0565218px;
+  color: #2481CC;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1390px) {
   .header-left-inner-time {
