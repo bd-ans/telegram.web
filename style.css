@@ -189,6 +189,10 @@ body::-webkit-scrollbar {
   border-color: #EAEAEA !important;
 }
 
+.user-main-status-info {
+  width: 60%;
+}
+
 .user-main-status-info__user-name,
 .user-main-status-info__user-goup-name,
 .user-main-status-info__user-message {
@@ -508,6 +512,10 @@ body::-webkit-scrollbar {
   font-weight: 400;
 }
 
+
+.me-messge-item {
+  width: 50%;
+}
 
 @media (max-width: 1390px) {
   .header-left-inner-time {
