@@ -304,15 +304,27 @@ body {
   display: none;
 }
 
+.footer-l-svg path {
+  fill:#979797;
+}
+
+.footer-l-svg:hover path {
+  fill:#2481CC;
+  transition: all .1s ease-in-out;
+}
+
 #textarea:valid + .footer-right-box .footer-right-box-btn:last-child .footer-right-box-btn__img:first-child{
+  transition: all 5s ease;
   display: none;
 }
 
 #textarea:valid + .footer-right-box .footer-right-box-btn:last-child .footer-right-box-btn__img:last-child{
+  transition: all 5s ease;
   display: block;
 }
 
 #textarea:invalid + .footer-right-box .footer-right-box-btn:last-child .footer-right-box-btn__img:first-child{
+  transition: all 5s ease;
   display: block;
 }
 
