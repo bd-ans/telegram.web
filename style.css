@@ -372,6 +372,11 @@ body::-webkit-scrollbar {
   transition: all .1s ease-in-out;
 }
 
+.footer-flags-img:hover path {
+  stroke: #2481CC;
+  transition: all .1s ease-in-out;
+}
+
 /* END STYLING SMILES HOVER EFFECTS */
 
 .pro,
