@@ -434,11 +434,30 @@ body::-webkit-scrollbar {
   background: #555; 
 }
 
+/* START MAIN */
+
 .main-center {
   height: 100%;
   overflow: hidden;
   overflow-y: scroll;
   padding-bottom: 53px;
+}
+
+.user-name,
+.user-message {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: -0.0565218px;
+  color: #2481CC;
+}
+
+.user-message {
+  font-weight: 400;
+  letter-spacing: -0.0565218px;
+  color: #060606;
 }
 
 @media (max-width: 1390px) {
