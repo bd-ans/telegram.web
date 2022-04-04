@@ -313,6 +313,11 @@ body {
   transition: all .1s ease-in-out;
 }
 
+.footer-left-box-btn__img:hover path{
+  stroke: #2481CC;
+  transition: .1s ease-in-out;
+}
+
 #textarea:valid + .footer-right-box .footer-right-box-btn:last-child .footer-right-box-btn__img:first-child{
   transition: all 5s ease;
   display: none;
