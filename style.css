@@ -510,11 +510,12 @@ body::-webkit-scrollbar {
 
 .user-link-message__link-text {
   font-weight: 400;
+  /* width: 250px; */
 }
 
 
 .me-messge-item {
-  width: 50%;
+  width: 70%;
 }
 
 @media (max-width: 1390px) {
