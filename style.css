@@ -161,6 +161,14 @@ body::-webkit-scrollbar {
   background-color: #F7F7F7;
 }
 
+.active-bg {
+  background-color: #4C91C7;
+}
+
+.active-bg:hover {
+  background-color: #2e94e2dc !important;
+}
+
 .main-status-time-box {
   position: relative;
 }
@@ -415,6 +423,7 @@ body::-webkit-scrollbar {
   overflow: hidden;
   overflow-y: scroll;
   overflow-x: hidden;
+  padding-bottom: 56px;
 }
 
 .main-left::-webkit-scrollbar,
