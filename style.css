@@ -467,6 +467,7 @@ body::-webkit-scrollbar {
 }
 
 .time-box-items__sended-time {
+  font-weight: 400;
   font-size: 12px;
   line-height: 15px;
   letter-spacing: -0.0521739px;
@@ -510,12 +511,22 @@ body::-webkit-scrollbar {
 
 .user-link-message__link-text {
   font-weight: 400;
-  /* width: 250px; */
 }
-
 
 .me-messge-item {
   width: 70%;
+}
+
+.date-time-box__item {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: -0.0565218px;
+  color: #999999;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 1390px) {
