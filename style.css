@@ -544,6 +544,7 @@ body::-webkit-scrollbar {
   overflow: hidden;
   overflow-y: scroll;
   padding-bottom: 58px;
+  margin-bottom: 58px;
 }
 
 .user-name,
