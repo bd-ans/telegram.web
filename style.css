@@ -540,11 +540,10 @@ body::-webkit-scrollbar {
 /* START MAIN */
 
 .main-center {
-  height: 100%;
+  height: 98%;
   overflow: hidden;
   overflow-y: scroll;
   padding-bottom: 58px;
-  margin-bottom: 58px;
 }
 
 .user-name,
