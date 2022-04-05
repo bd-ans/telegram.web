@@ -540,7 +540,7 @@ body::-webkit-scrollbar {
 /* START MAIN */
 
 .main-center {
-  height: 98%;
+  height: 100%;
   overflow: hidden;
   overflow-y: scroll;
   padding-bottom: 58px;
