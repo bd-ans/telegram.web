@@ -656,8 +656,6 @@ body::-webkit-scrollbar {
   fill: #ffffff;
 }
 
-/* HOVER */
-
 .active:hover .user-main-status .user-main-status-info .user-main-status-info__user-goup-name,
 .active:hover .user-main-status .user-main-status-info .user-main-status-info__user-message,
 .active:hover .user-main-status .user-main-status-info .user-main-status-info__user-name, 
@@ -673,6 +671,33 @@ body::-webkit-scrollbar {
 .active:hover .user-main-status .main-status-time-box .main-status-time-box__pin-img path {
   fill: #4C91C7;
 }
+
+.me-messge-item {
+  width: 500px;
+}
+
+.channel-bg-color {
+  background-color: #f7f7f7 !important;
+}
+
+.user-main-items {
+  border-radius: 12px;
+}
+
+.user-main-items__content-img-item {
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.user-main-items-channel-timebox__watchs,
+.user-main-items-channel-timebox__time {
+  font-family: cursive;
+  font-weight: 400;
+  font-size: 10px;
+  color: #AEAEAE;
+}
+
 
 @media (max-width: 1390px) {
   .header-left-inner-time {
