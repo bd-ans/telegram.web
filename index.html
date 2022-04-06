@@ -50,18 +50,39 @@
   <main class="main">
     <div class="container-fluid pro">
       <div class="main-inner row">
-        <div class="main-left d-none d-md-block col-md-5 col-lg-4 col-xl-3 border-end">
+        <div class="main-left d-none d-md-block col-md-5 col-lg-4 col-xl-3 border-end nav ps-2">
           <!-- *USERS GROUPS AND CHATS -->
-          <div class="user main-bg cursor-pointer d-flex justify-content-between">
+          <div onclick="changeColor()" class="user main-bg cursor-pointer d-flex justify-content-between active" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
             <div class="user-user-avatar d-flex align-items-center">
               <img src="./img/user-avatar-name__baikal.png" alt="Baikal Lake">
             </div>
 
             <div class="user-main-status border-bottom col d-flex justify-content-between mt-2">
               <div class="user-main-status-info">
-                <span class="d-block user-main-status-info__user-name">Baikal Lake</span>
-                <span class="d-block user-main-status-info__user-goup-name">Nasty Markelova</span>
-                <span class="d-block user-main-status-info__user-message">😚❤️ Thanks!</span>
+                <span class="user-main-status-info__user-name d-block">Baikal Lake</span>
+                <span class="user-main-status-info__user-goup-name d-block">Nasty Markelova</span>
+                <span class="user-main-status-info__user-message d-block">😚❤️ Thanks!</span>
+              </div>
+
+              <div class="main-status-time-box d-block mx-2">
+                <div class="main-top-status d-flex align-items-center">
+                  <span class="main-top-status-time-box__send-time">Wed</span>
+                </div>
+                <svg class="main-status-time-box__pin-img" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="10" stroke="#A4A4A9"/><path d="m7.261 14.776 4.805-4.804" stroke="#A4A4A9"/><path fill-rule="evenodd" clip-rule="evenodd" d="m8.064 9.1 4.814 4.815v-1.94l3.154-3.153L13.25 6.04l-3.144 3.144L8.064 9.1Z" fill="#A4A4A9"/></svg>
+              </div>
+            </div>
+          </div>
+          <!-- USER -->
+          <div class="user main-bg cursor-pointer d-flex justify-content-between" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+            <div class="user-user-avatar d-flex align-items-center">
+              <img src="./img/group-avatar-name__moskov.png" alt="Moscow friends">
+            </div>
+
+            <div class="user-main-status border-bottom col d-flex justify-content-between mt-2">
+              <div class="user-main-status-info">
+                <span class="user-main-status-info__user-name d-block">Moscow friends</span>
+                <span class="user-main-status-info__user-goup-name d-block">Olga Staroverova</span>
+                <span class="user-main-status-info__user-message d-block">Does anyone has kazan? …</span>
               </div>
 
               <div class="main-status-time-box d-block mx-2">
@@ -75,47 +96,26 @@
           <!-- USER -->
           <div class="user main-bg cursor-pointer d-flex justify-content-between">
             <div class="user-user-avatar d-flex align-items-center">
-              <img src="./img/group-avatar-name__moskov.png" alt="Moscow friends">
-            </div>
-
-            <div class="user-main-status border-bottom col d-flex justify-content-between mt-2">
-              <div class="user-main-status-info">
-                <span class="d-block user-main-status-info__user-name">Moscow friends</span>
-                <span class="d-block user-main-status-info__user-goup-name">Olga Staroverova</span>
-                <span class="d-block user-main-status-info__user-message">Does anyone has kazan? …</span>
-              </div>
-
-              <div class="main-status-time-box d-block mx-2">
-                <div class="main-top-status d-flex align-items-center">
-                  <span class="main-top-status-time-box__send-time">Wed</span>
-                </div>
-                <svg class="main-status-time-box__pin-img" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="10" stroke="#A4A4A9"/><path d="m7.261 14.776 4.805-4.804" stroke="#A4A4A9"/><path fill-rule="evenodd" clip-rule="evenodd" d="m8.064 9.1 4.814 4.815v-1.94l3.154-3.153L13.25 6.04l-3.144 3.144L8.064 9.1Z" fill="#A4A4A9"/></svg>
-              </div>
-            </div>
-          </div>
-          <!-- USER -->
-          <div class="user active-bg cursor-pointer d-flex justify-content-between">
-            <div class="user-user-avatar d-flex align-items-center">
               <img src="./img/user-avatar-name__evgenia.png" alt="Evgenia Markova">
             </div>
 
             <div class="user-main-status border-bottom col d-flex justify-content-between mt-2">
               <div class="user-main-status-info">
-                <span class="d-block user-main-status-info__user-name" style="color: #ffffff;">Evgenia Markova</span>
-                <span class="d-block user-main-status-info__user-message" style="font-weight: 400; color: #ffffff;">https://journal.tinkoff.ru/1ga- <br> dalnyi-vostok/</span>
+                <span class="d-block user-main-status-info__user-name">Evgenia Markova</span>
+                <span class="d-block user-main-status-info__user-message" style="font-weight: 400;">https://journal.tinkoff.ru/1ga- <br> dalnyi-vostok/</span>
               </div>
 
               <div class="main-status-time-box mx-2">
                 <div class="main-top-status d-flex align-items-center no-wrap">
-                  <svg class="main-top-status-time-box__readed-img mx-2" width="17" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" stroke="#ffffff"><path d="m0 4.3 3.48 3.48L11.258 0M7.08 6.656l1.4 1.123L16.258 0"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h17v8H0z"/></clipPath></defs></svg>
-                  <span class="main-top-status-time-box__send-time" style="color: #ffffff;">9:35 AM</span>
+                  <svg class="main-top-status-time-box__readed-img mx-2" width="17" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" stroke="#0AC034"><path d="m0 4.3 3.48 3.48L11.258 0M7.08 6.656l1.4 1.123L16.258 0"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h17v8H0z"/></clipPath></defs></svg>
+                  <span class="main-top-status-time-box__send-time">9:35 AM</span>
                 </div>
-                <svg class="main-status-time-box__pin-img" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="10" stroke="#ffffff"/><path d="m7.261 14.776 4.805-4.804" stroke="#ffffff"/><path fill-rule="evenodd" clip-rule="evenodd" d="m8.064 9.1 4.814 4.815v-1.94l3.154-3.153L13.25 6.04l-3.144 3.144L8.064 9.1Z" fill="#ffffff"/></svg>
+                <svg class="main-status-time-box__pin-img" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="10" stroke="#A4A4A9"/><path d="m7.261 14.776 4.805-4.804" stroke="#A4A4A9"/><path fill-rule="evenodd" clip-rule="evenodd" d="m8.064 9.1 4.814 4.815v-1.94l3.154-3.153L13.25 6.04l-3.144 3.144L8.064 9.1Z" fill="#A4A4A9"/></svg>
               </div>
             </div>
           </div>
             <!-- USER -->
-          <div class="user cursor-pointer d-flex justify-content-between bg-active" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+          <div class="user cursor-pointer d-flex justify-content-between bg-active">
             <div class="user-user-avatar d-flex align-items-center">
               <img src="./img/channel-avatar-name__framer.png" alt="Framer Learning Chan…">
             </div>
@@ -797,8 +797,8 @@
           <!-- *END USERS GROUPS AND CHATS -->
         </div>
         <!-- *MAIN USER MESSAGES BOX -->
-        <div class="main-center col" id="main-center">
-          
+        <div class="main-center col tab-content d-flex flex-column-reverse overflow-auto" id="main-center">
+          <div class="chat-for-baikal-like fade show  active tab-pane active-bg-white" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
           <!-- DATE TIME -->
           <div class="date-time-box text-center my-2 d-flex justify-content-center align-items-center">
             <span class="date-time-box__item">20 January</span>
@@ -1793,7 +1793,347 @@
               <span class="time-box-items__sended-time">9:35 AM</span>
             </div>
           </div>
+          </div>
 
+          <div class="chat-for-moscow-friends fade tab-pane active-bg-white" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"">
+          <!-- DATE TIME -->
+          <div class="date-time-box text-center my-2 d-flex justify-content-center align-items-center">
+            <span class="date-time-box__item">20 January</span>
+          </div>
+          <!--END DATE TIME -->
+          <!-- USER MESSAGES -->
+          <div class="me-message d-flex justify-content-between mt-2">
+            <div class="me-messge-item d-flex">
+              <img class="me-messge-item__user-img" width="36" height="36" src="./img/user-avatar-name__dmitriy.png" alt="Me User">
+              <div class="user-main-items d-block mx-2">
+                <a class="user-main-items__me-name user-name cursor-pointer">
+                  Dmitriy
+                </a>
+                <p class="user-main-items__me-message user-message-link mt-1 cursor-pointer mb-0">
+                  https://www.behance.net/gallery/4062
+                </p>
+                <div class="user-link-message border-start border-2">
+                  <a class="user-link-message__message-link text-decoration-none mx-2 my-1" href="#">
+                    Behance
+                  </a>
+                  <h2 class="user-link-message__link-title mx-2 my-1">
+                    Still Optimist
+                  </h2>
+                  <p class="user-link-message__link-text mx-2 mb-2">
+                    Pony Mtl and Sid Lee Collective
+                  </p>
+                  <img class="user-link-message__link-img mx-2" width="60" height="60" src="./img/user-link-img.png" alt="User Link Message image">
+                </div>
+              </div>
+            </div>
+            
+            <div class="time-box-items d-flex">
+              <img class="time-box-items__readed-img mx-2 mt-1" width="17" height="8" src="./img/readed-icon.svg" alt="readed icon">
+              <span class="time-box-items__sended-time">Fri</span>
+            </div>
+          </div>
+          <!-- USER MESSAGES -->
+          <div class="me-message d-flex justify-content-between mt-2">
+            <div class="me-messge-item d-flex">
+              <img class="me-messge-item__user-img" width="36" height="36" src="./img/user-avatar-name__dmitriy.png" alt="Me User">
+              <div class="user-main-items d-block mx-2">
+                <a class="user-main-items__me-name user-name cursor-pointer">
+                  Dmitriy
+                </a>
+                <p class="user-main-items__me-message user-message-link mt-1 cursor-pointer mb-0">
+                  https://www.behance.net/gallery/4062
+                </p>
+                <div class="user-link-message border-start border-2">
+                  <a class="user-link-message__message-link text-decoration-none mx-2 my-1" href="#">
+                    Abduzeedo
+                  </a>
+                  <h2 class="user-link-message__link-title mx-2 my-1">
+                    Unique Pop Fine Art by Limpfish
+                  </h2>
+                  <div class="user-link-box d-flex flex-wrap">
+                    <p class="user-link-message__link-text mx-2 mb-0 col-6">
+                      It’s always a great day when you find a real slick set of works like these by artist David Barton, aka Limpfish.
+                    </p>
+                    <img class="user-link-message__link-img mx-1 my-0 mt-2" width="60" height="60" src="./img/user-link-right-img.png" alt="User Link Message image">
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="time-box-items d-flex">
+              <img class="time-box-items__readed-img mx-2 mt-1" width="17" height="8" src="./img/readed-icon.svg" alt="readed icon">
+              <span class="time-box-items__sended-time">Fri</span>
+            </div>
+          </div>
+
+          <!-- DATE TIME -->
+          <div class="date-time-box text-center my-2 d-flex justify-content-center align-items-center">
+            <span class="date-time-box__item">Tomorrow</span>
+          </div>
+          <!-- EDN DATE TIME -->
+          <!-- USER MESSAGES -->
+          <div class="me-message d-flex justify-content-between mt-2">
+            <div class="me-messge-item d-flex">
+              <img class="me-messge-item__user-img" width="36" height="36" src="./img/user-avatar-name__dmitriy.png" alt="Me User">
+              <div class="user-main-items d-block mx-2">
+                <a class="user-main-items__me-name user-name cursor-pointer">
+                  Dmitriy
+                </a>
+                <p class="user-main-items__me-message user-message mt-1 mb-0">
+                  OK!
+                </p>
+              </div>
+            </div>
+            
+            <div class="time-box-items d-flex justify-content-between">
+              <img class="time-box-items__readed-img mx-2 mt-1" width="17" height="8" src="./img/readed-icon.svg" alt="readed icon">
+              <span class="time-box-items__sended-time">Fri</span>
+            </div>
+          </div>
+          <!-- USER MESSAGES -->
+          <div class="me-message d-flex justify-content-between mt-2">
+            <div class="me-messge-item d-flex">
+              <img class="me-messge-item__user-img" width="36" height="36" src="./img/user-avatar-name__evgenia.png" alt="Me User Image">
+              <div class="user-main-items d-block mx-2">
+                <a class="user-main-items__me-name user-name cursor-pointer">
+                  Evgenia
+                </a>
+                <p class="user-main-items__me-message user-message mt-1 mb-0">
+                  Yeah!
+                </p>
+                <p class="user-main-items__me-message user-message mt-1 mb-0">
+                  I’m ready, waiting.
+                </p>
+              </div>
+            </div>
+
+            <div class="time-box-items d-flex justify-content-between">
+              <img class="time-box-items__readed-img mx-2 mt-1" width="17" height="8" src="./img/readed-icon.svg" alt="readed icon">
+              <span class="time-box-items__sended-time">Fri</span>
+            </div>
+          </div>
+          <div class="me-message d-flex justify-content-between mt-2">
+            <div class="me-messge-item d-flex">
+              <img class="me-messge-item__user-img" width="36" height="36" src="./img/user-avatar-name__dmitriy.png" alt="Me User">
+              <div class="user-main-items d-block mx-2">
+                <a class="user-main-items__me-name user-name cursor-pointer">
+                  Dmitriy
+                </a>
+                <p class="user-main-items__me-message user-message-link mt-1 cursor-pointer mb-0">
+                  https://www.behance.net/gallery/4062
+                </p>
+              </div>
+            </div>
+            
+            <div class="time-box-items d-flex">
+              <img class="time-box-items__readed-img mx-2 mt-1" width="17" height="8" src="./img/readed-icon.svg" alt="readed icon">
+              <span class="time-box-items__sended-time">9:35 AM</span>
+            </div>
+          </div>
+          <!-- USER MESSAGES -->
+          <div class="me-message d-flex justify-content-between mt-2">
+            <div class="me-messge-item d-flex">
+              <img class="me-messge-item__user-img" width="36" height="36" src="./img/user-avatar-name__dmitriy.png" alt="Me User">
+              <div class="user-main-items d-block mx-2">
+                <a class="user-main-items__me-name user-name cursor-pointer">
+                  Dmitriy
+                </a>
+                <p class="user-main-items__me-message user-message-link mt-1 cursor-pointer mb-0">
+                  https://www.behance.net/gallery/4062
+                </p>
+                <div class="user-link-message border-start border-2">
+                  <a class="user-link-message__message-link text-decoration-none mx-2 my-1" href="#">
+                    Behance
+                  </a>
+                  <h2 class="user-link-message__link-title mx-2 my-1">
+                    Still Optimist
+                  </h2>
+                  <p class="user-link-message__link-text mx-2 mb-2">
+                    Pony Mtl and Sid Lee Collective
+                  </p>
+                  <img class="user-link-message__link-img mx-2" width="60" height="60" src="./img/user-link-img.png" alt="User Link Message image">
+                </div>
+              </div>
+            </div>
+            
+            <div class="time-box-items d-flex">
+              <img class="time-box-items__readed-img mx-2 mt-1" width="17" height="8" src="./img/readed-icon.svg" alt="readed icon">
+              <span class="time-box-items__sended-time">Fri</span>
+            </div>
+          </div>
+          <!-- USER MESSAGES -->
+          <div class="me-message d-flex justify-content-between mt-2">
+            <div class="me-messge-item d-flex">
+              <img class="me-messge-item__user-img" width="36" height="36" src="./img/user-avatar-name__evgenia.png" alt="Me User Image">
+              <div class="user-main-items d-block mx-2">
+                <a class="user-main-items__me-name user-name cursor-pointer">
+                  Evgenia
+                </a>
+                <p class="user-main-items__me-message user-message mt-1 mb-0">
+                  Yeah!
+                </p>
+                <p class="user-main-items__me-message user-message mt-1 mb-0">
+                  I’m ready, waiting.
+                </p>
+              </div>
+            </div>
+
+            <div class="time-box-items d-flex justify-content-between">
+              <img class="time-box-items__readed-img mx-2 mt-1" width="17" height="8" src="./img/readed-icon.svg" alt="readed icon">
+              <span class="time-box-items__sended-time">Fri</span>
+            </div>
+          </div>
+          <!-- USER MESSAGES -->
+          <div class="me-message d-flex justify-content-between mt-2">
+            <div class="me-messge-item d-flex">
+              <img class="me-messge-item__user-img" width="36" height="36" src="./img/user-avatar-name__dmitriy.png" alt="Me User">
+              <div class="user-main-items d-block mx-2">
+                <a class="user-main-items__me-name user-name cursor-pointer">
+                  Dmitriy
+                </a>
+                <p class="user-main-items__me-message user-message mt-1 mb-0">
+                  Already here.!
+                </p>
+              </div>
+            </div>
+            
+            <div class="time-box-items d-flex justify-content-between">
+              <img class="time-box-items__readed-img mx-2 mt-1" width="17" height="8" src="./img/readed-icon.svg" alt="readed icon">
+              <span class="time-box-items__sended-time">Fri</span>
+            </div>
+          </div>
+          <!-- USER MESSAGES -->
+          <div class="me-message d-flex justify-content-between mt-2">
+            <div class="me-messge-item d-flex">
+              <img class="me-messge-item__user-img" width="36" height="36" src="./img/user-avatar-name__evgenia.png" alt="Me User Image">
+              <div class="user-main-items d-block mx-2">
+                <a class="user-main-items__me-name user-name cursor-pointer">
+                  Evgenia
+                </a>
+                <p class="user-main-items__me-message user-message mt-1 mb-0">
+                  Yeah!
+                </p>
+                <p class="user-main-items__me-message user-message mt-1 mb-0">
+                  I’m ready, waiting.
+                </p>
+              </div>
+            </div>
+
+            <div class="time-box-items d-flex justify-content-between">
+              <img class="time-box-items__readed-img mx-2 mt-1" width="17" height="8" src="./img/readed-icon.svg" alt="readed icon">
+              <span class="time-box-items__sended-time">Fri</span>
+            </div>
+          </div>
+          <!-- USER MESSAGES -->
+          <div class="me-message d-flex justify-content-between mt-2">
+            <div class="me-messge-item d-flex">
+              <img class="me-messge-item__user-img" width="36" height="36" src="./img/user-avatar-name__dmitriy.png" alt="Me User">
+              <div class="user-main-items d-block mx-2">
+                <a class="user-main-items__me-name user-name cursor-pointer">
+                  Dmitriy
+                </a>
+                <p class="user-main-items__me-message user-message mt-1 mb-0">
+                  Already here.!
+                </p>
+              </div>
+            </div>
+            
+            <div class="time-box-items d-flex justify-content-between">
+              <img class="time-box-items__readed-img mx-2 mt-1" width="17" height="8" src="./img/readed-icon.svg" alt="readed icon">
+              <span class="time-box-items__sended-time">Fri</span>
+            </div>
+          </div>
+          <!-- USER MESSAGES -->
+          <div class="me-message d-flex justify-content-between mt-2">
+            <div class="me-messge-item d-flex">
+              <img class="me-messge-item__user-img" width="36" height="36" src="./img/user-avatar-name__dmitriy.png" alt="Me User">
+              <div class="user-main-items d-block mx-2">
+                <a class="user-main-items__me-name user-name cursor-pointer">
+                  Dmitriy
+                </a>
+                <p class="user-main-items__me-message user-message-link mt-1 cursor-pointer mb-0">
+                  https://www.behance.net/gallery/4062
+                </p>
+                <div class="user-link-message border-start border-2">
+                  <a class="user-link-message__message-link text-decoration-none mx-2 my-1" href="#">
+                    Behance
+                  </a>
+                  <h2 class="user-link-message__link-title mx-2 my-1">
+                    Still Optimist
+                  </h2>
+                  <p class="user-link-message__link-text mx-2 mb-2">
+                    Pony Mtl and Sid Lee Collective
+                  </p>
+                  <img class="user-link-message__link-img mx-2" width="60" height="60" src="./img/user-link-img.png" alt="User Link Message image">
+                </div>
+              </div>
+            </div>
+            
+            <div class="time-box-items d-flex">
+              <img class="time-box-items__readed-img mx-2 mt-1" width="17" height="8" src="./img/readed-icon.svg" alt="readed icon">
+              <span class="time-box-items__sended-time">Fri</span>
+            </div>
+          </div>
+          <!-- USER MESSAGES -->
+          <div class="me-message d-flex justify-content-between mt-2">
+            <div class="me-messge-item d-flex">
+              <img class="me-messge-item__user-img" width="36" height="36" src="./img/user-avatar-name__dmitriy.png" alt="Me User">
+              <div class="user-main-items d-block mx-2">
+                <a class="user-main-items__me-name user-name cursor-pointer">
+                  Dmitriy
+                </a>
+                <p class="user-main-items__me-message user-message-link mt-1 cursor-pointer mb-0">
+                  https://www.behance.net/gallery/4062
+                </p>
+                <div class="user-link-message border-start border-2">
+                  <a class="user-link-message__message-link text-decoration-none mx-2 my-1" href="#">
+                    Abduzeedo
+                  </a>
+                  <h2 class="user-link-message__link-title mx-2 my-1">
+                    Unique Pop Fine Art by Limpfish
+                  </h2>
+                  <div class="user-link-box d-flex flex-wrap">
+                    <p class="user-link-message__link-text mx-2 mb-0 col-6">
+                      It’s always a great day when you find a real slick set of works like these by artist David Barton, aka Limpfish.
+                    </p>
+                    <img class="user-link-message__link-img mx-1 my-0 mt-2" width="60" height="60" src="./img/user-link-right-img.png" alt="User Link Message image">
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="time-box-items d-flex">
+              <img class="time-box-items__readed-img mx-2 mt-1" width="17" height="8" src="./img/readed-icon.svg" alt="readed icon">
+              <span class="time-box-items__sended-time">Fri</span>
+            </div>
+          </div>
+
+          <!-- DATE TIME -->
+          <div class="date-time-box text-center my-2 d-flex justify-content-center align-items-center">
+            <span class="date-time-box__item">04 February</span>
+          </div>
+          <!--END DATE TIME -->
+
+          <!-- USER MESSAGES -->
+          <div class="me-message d-flex justify-content-between mt-2">
+            <div class="me-messge-item d-flex">
+              <img class="me-messge-item__user-img" width="36" height="36" src="./img/user-avatar-name__dmitriy.png" alt="Me User">
+              <div class="user-main-items d-block mx-2">
+                <a class="user-main-items__me-name user-name cursor-pointer">
+                  Dmitriy
+                </a>
+                <p class="user-main-items__me-message user-message-link mt-1 cursor-pointer mb-0">
+                  https://www.behance.net/gallery/4062
+                </p>
+              </div>
+            </div>
+            
+            <div class="time-box-items d-flex">
+              <img class="time-box-items__readed-img mx-2 mt-1" width="17" height="8" src="./img/readed-icon.svg" alt="readed icon">
+              <span class="time-box-items__sended-time">9:35 AM</span>
+            </div>
+          </div>
+          </div>
         </div>
         <!-- *END USER MESSAGES BOX -->
         <!--* MAIN RIGHT -->
@@ -2187,15 +2527,15 @@
     </div>
   </footer>
 
-  
+  <!-- <script>
+    let user = document.getElementsByClassName('user')[0];
+    var user_name = document.getElementsByClassName('user-main-status-info__user-name')[0];
+    let user_group_name = document.getElementsByClassName('user-main-status-info__user-goup-name');
+    let user_message = document.getElementsByClassName('user-main-status-info__user-message');
 
-  <!-- SCRIPT FOR MAIN-CENTER SSCROLL -->
-  <script>
-    var element = document.getElementById('main-center');
-    element.scrollTop = element.scrollHeight;
-  </script>
-  <!-- END SCRIPT FOR MAIN-CENTER SSCROLL -->
 
+    
+  </script> -->
   <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="./bootstrap/js/bootstrap.min.js"></script>
   

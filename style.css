@@ -152,13 +152,21 @@ body::-webkit-scrollbar {
 .header-main-other-opiopns-search-btn {
   margin-right: 28px !important;
 }
-
 .main {
   padding-top: 47px;
 }
 
 .main-bg {
   background-color: #F7F7F7;
+}
+
+.active {
+  background-color: #4C91C7;
+}
+
+
+.active-bg-white {
+  background-color: #ffffff !important;
 }
 
 .active-bg {
@@ -626,6 +634,44 @@ body::-webkit-scrollbar {
   color: #999999;
   margin-left: auto;
   margin-right: auto;
+}
+
+.white-tex {
+  color: #ffffff !important;
+}
+
+.active .user-main-status .user-main-status-info .user-main-status-info__user-name, 
+.active .user-main-status .user-main-status-info .user-main-status-info__user-goup-name,
+.active .user-main-status .user-main-status-info .user-main-status-info__user-message,
+.active .user-main-status .main-status-time-box .main-top-status .main-top-status-time-box__send-time {
+  color: #ffffff !important;
+}
+
+.active .user-main-status .main-status-time-box .main-status-time-box__pin-img circle,
+.active .user-main-status .main-status-time-box .main-status-time-box__pin-img path {
+  stroke: #ffffff;
+}
+
+.active .user-main-status .main-status-time-box .main-status-time-box__pin-img path {
+  fill: #ffffff;
+}
+
+/* HOVER */
+
+.active:hover .user-main-status .user-main-status-info .user-main-status-info__user-goup-name,
+.active:hover .user-main-status .user-main-status-info .user-main-status-info__user-message,
+.active:hover .user-main-status .user-main-status-info .user-main-status-info__user-name, 
+.active:hover .user-main-status .main-status-time-box .main-top-status .main-top-status-time-box__send-time {
+  color: #4C91C7 !important;
+}
+
+.active:hover .user-main-status .main-status-time-box .main-status-time-box__pin-img circle,
+.active:hover .user-main-status .main-status-time-box .main-status-time-box__pin-img path {
+  stroke: #4C91C7;
+}
+
+.active:hover .user-main-status .main-status-time-box .main-status-time-box__pin-img path {
+  fill: #4C91C7;
 }
 
 @media (max-width: 1390px) {
