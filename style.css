@@ -84,7 +84,7 @@ body::-webkit-scrollbar {
   color: #aeaeae;
 }
 
-.header-left-inner__search-input:focus {
+.header-left-inner__search-input:valid {
   background-image: url("./img/cancel-close.svg");
   background-repeat: no-repeat;
   background-size: 18px 18px;
