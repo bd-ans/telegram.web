@@ -656,6 +656,10 @@ body::-webkit-scrollbar {
   fill: #ffffff;
 }
 
+.active .user-main-status {
+  border-color: transparent !important;
+}
+
 .active:hover .user-main-status .user-main-status-info .user-main-status-info__user-goup-name,
 .active:hover .user-main-status .user-main-status-info .user-main-status-info__user-message,
 .active:hover .user-main-status .user-main-status-info .user-main-status-info__user-name, 
