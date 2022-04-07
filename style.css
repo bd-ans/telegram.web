@@ -443,6 +443,14 @@ body::-webkit-scrollbar {
   transition: .1s ease-in-out;
 }
 
+.d-none-footer {
+  display: none !important;
+}
+
+.d-block-footer {
+  display: block !important;
+}
+
 #textarea:valid + .footer-right-box .footer-right-box-btn:last-child .footer-right-box-btn__img:first-child{
   display: none;
 }

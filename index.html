@@ -73,7 +73,7 @@
             </div>
           </div>
           <!-- USER -->
-          <div class="user main-bg cursor-pointer d-flex justify-content-between" data-bs-toggle="pill" data-bs-target="#v-pills-chat-f-moscow" type="button" role="tab" aria-controls="v-pills-chat-f-moscow" aria-selected="false">
+          <div onclick="addFooter()" class="user main-bg cursor-pointer d-flex justify-content-between" data-bs-toggle="pill" data-bs-target="#v-pills-chat-f-moscow" type="button" role="tab" aria-controls="v-pills-chat-f-moscow" aria-selected="false">
             <div class="user-user-avatar d-flex align-items-center">
               <img width="50" height="50" src="./img/group-avatar-name__moskov.png" alt="Moscow friends">
             </div>
@@ -94,7 +94,7 @@
             </div>
           </div>
           <!-- USER -->
-          <div class="user main-bg cursor-pointer d-flex justify-content-between active" data-bs-toggle="pill" data-bs-target="#v-pills-chat-f-evgenia" type="button" role="tab" aria-controls="v-pills-chat-f-evgenia" aria-selected="false">
+          <div onclick="addFooter()" class="user main-bg cursor-pointer d-flex justify-content-between active" data-bs-toggle="pill" data-bs-target="#v-pills-chat-f-evgenia" type="button" role="tab" aria-controls="v-pills-chat-f-evgenia" aria-selected="false">
             <div class="user-user-avatar d-flex align-items-center">
               <img width="50" height="50" src="./img/user-avatar-name__evgenia.png" alt="Evgenia Markova">
             </div>
@@ -115,7 +115,7 @@
             </div>
           </div>
             <!-- USER -->
-          <div class="user cursor-pointer d-flex justify-content-between" data-bs-toggle="pill" data-bs-target="#v-pills-chat-f-framer-learning" type="button" role="tab" aria-controls="v-pills-chat-f-framer-learning" aria-selected="false">
+          <div onclick="removeFooter()" class="user cursor-pointer d-flex justify-content-between" id="framer-channel" data-bs-toggle="pill" data-bs-target="#v-pills-chat-f-framer-learning" type="button" role="tab" aria-controls="v-pills-chat-f-framer-learning" aria-selected="false">
             <div class="user-user-avatar d-flex align-items-center">
               <img width="50" height="50"  src="./img/channel-avatar-name__framer.png" alt="Framer Learning Chan…">
             </div>
@@ -289,7 +289,7 @@
             </div>
           </div>
           <!-- USER -->
-          <div class="user main-bg cursor-pointer d-flex justify-content-between">
+          <div onclick="addFooter()" class="user main-bg cursor-pointer d-flex justify-content-between">
             <div class="user-user-avatar d-flex align-items-center">
               <img  src="./img/user-avatar-name__baikal.png" alt="Baikal Lake">
             </div>
@@ -3315,7 +3315,7 @@
           </div>
         </div>
 
-        <div class="footer-main col d-flex justify-content-between align-items-center">
+        <div class="footer-main col d-flex justify-content-between align-items-center d-block-footer" id="footer-main">
           <div class="footer-main-inner container-fluid d-flex">
             <div class="footer-left-box d-flex col align-items-center">
               <button class="footer-left-box-btn d-flex align-items-center cursor-default border-0 bg-transparent rounded-circle">
@@ -3386,6 +3386,23 @@
     </div>
   </footer>
 
+  <script>
+    let channel = document.getElementById('framer-channel');
+    let footer = document.getElementsByClassName('footer-main')[0];
+
+    function removeFooter() {
+      if (channel.classList.contains('active')) {
+        footer.classList.remove('d-block-footer');
+        footer.classList.add('d-none-footer');
+      } else {
+        footer.classList.remove('d-none-footer');
+      }
+    }
+
+    function addFooter() {
+      footer.classList.remove('d-none-footer');
+    }
+  </script>
 
   <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="./bootstrap/js/bootstrap.min.js"></script>
