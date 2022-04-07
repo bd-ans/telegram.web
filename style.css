@@ -735,6 +735,28 @@ body::-webkit-scrollbar {
   color: #AEAEAE;
 }
 
+@media (max-width: 1200px) {
+  .footer-right-box-btnimg path,
+  .footer-right-box-btnimg circle {
+    stroke: #999999;
+  }
+
+  .footer-right-box-btnimg ellipse {
+    fill: #999999;
+  }
+
+  /* GOVER FOR FOOTER RIGHT BOX BTNIMG */
+
+  .footer-right-box-btnimg:hover path,
+  .footer-right-box-btnimg:hover circle {
+    stroke: #2481CC;
+  }
+
+  .footer-right-box-btnimg:hover ellipse {
+    fill: #2481CC;
+  }
+}
+
 
 @media (max-width: 1390px) {
   .header-left-inner-time {
