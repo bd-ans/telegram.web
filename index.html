@@ -3344,7 +3344,7 @@
           <!-- FOOTER BOTTOM -->
           <div class="footer-main-inner container-fluid d-flex d-none-footer-bottom" id="footer-bottom">
             <div class="col d-flex justify-content-center align-items-center">
-              <button class="footer-main-inner__bottom-btn">SILENCE</button>
+              <button class="footer-main-inner__bottom-btn" id="footer-bottom-txt" onclick="fChangeTxt()">SILENCE ON</button>
             </div>
           </div>
           <!--END FOOTER BOTTOM -->
@@ -3397,6 +3397,7 @@
     let channel = document.getElementById('framer-channel');
     let footer = document.getElementById('footer-main-inner');
     let footer_bottom = document.getElementById('footer-bottom');
+    let footer_bottom_txt_btn = document.getElementById('footer-bottom-txt');
 
     function removeFooter() {
       if (channel.classList.contains('active')) {
@@ -3413,6 +3414,12 @@
       footer.classList.remove('d-none-footer');
       footer_bottom.classList.remove('d-block-footer');
     }
+
+    function fChangeTxt() {
+      footer_bottom_txt_btn.innerHTML = 'SILENCE OFF';
+      footer_bottom_txt_btn.style.color = '#2480ccd5';
+    }
+
   </script>
 
   <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>

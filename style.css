@@ -460,13 +460,20 @@ body::-webkit-scrollbar {
 }
 
 .footer-main-inner__bottom-btn {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-family: serif;
   font-size: 16px;
   color: #2481CC;
   margin: 0;
   padding: 0;
   background-color: transparent;
   border: none;
+  opacity: .8;
+}
+
+.footer-main-inner__bottom-btn:hover {
+  transition: .2s ease-in-out;
+  opacity: 1;
 }
 
 #textarea:valid + .footer-right-box .footer-right-box-btn:last-child .footer-right-box-btn__img:first-child{
