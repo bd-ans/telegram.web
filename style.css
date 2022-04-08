@@ -68,10 +68,6 @@ body::-webkit-scrollbar {
   position: relative;
 }
 
-.header-left-inner {
-  position: relative;
-}
-
 .header-left-inner__search-input::placeholder {
   position: absolute;
   display: flex !important;
@@ -117,7 +113,7 @@ body::-webkit-scrollbar {
 }
 
 .header-left-inner-time {
-  margin-left: calc(25%);
+  margin-left: calc(22%);
   margin-top: 20px;
   font-weight: 400;
   font-size: 12px;
