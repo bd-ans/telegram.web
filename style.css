@@ -65,6 +65,7 @@ body::-webkit-scrollbar {
 
 .header-inner {
   height: 47px;
+  position: relative;
 }
 
 .header-left-inner {
@@ -116,14 +117,18 @@ body::-webkit-scrollbar {
 }
 
 .header-left-inner-time {
-  position: absolute;
-  margin-left: calc(55%);
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute; */
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-left: calc(55%); */
   margin-top: 20px;
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
   display: flex;
-  align-items: flex-end;
   text-align: center;
   letter-spacing: -0.0521739px;
   color: #A9A9A9;
@@ -757,7 +762,7 @@ body::-webkit-scrollbar {
   }
 }
 
-
+/* 
 @media (max-width: 1390px) {
   .header-left-inner-time {
     margin-left: calc(53%);
@@ -768,4 +773,4 @@ body::-webkit-scrollbar {
   .header-left-inner-time {
     margin-left: calc(46% - 50.35px);
   }
-}
+} */

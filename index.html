@@ -655,7 +655,7 @@
                 <div class="main-top-status d-flex align-items-center">
                   <span class="main-top-status-time-box__send-time">Fri</span>
                 </div>
-              </div>
+              </div>  
             </div>
           </div>
           <!-- USER -->
@@ -3399,12 +3399,14 @@
     let footer_bottom = document.getElementById('footer-bottom');
     let footer_bottom_txt_btn = document.getElementById('footer-bottom-txt');
     let textarea = document.getElementById('textarea');
+    let top_time = document.getElementsByClassName('header-left-inner-time')[0];
 
     function removeFooter() {
       if (channel.classList.contains('active')) {
         footer.classList.remove('d-block-footer');
         footer.classList.add('d-none-footer');
         footer_bottom.classList.add('d-block-footer');
+        // top_time.innerHTML = '00:00';
       } else {
         footer.classList.remove('d-none-footer');
         footer_bottom.classList.remove('d-none-footer');
