@@ -131,16 +131,17 @@ body::-webkit-scrollbar {
   display: flex;
   letter-spacing: -0.0521739px;
   color: #A9A9A9;
-  position: absolute;
-  margin-left: 39.9%;
+}
+
+.header-main-other-opiopns,
+.header-main__canel-button {
+  width: 68px;
 }
 
 .header-main__canel-button,
 .header-main-other-opiopns__edit-btn {
   font-size: 14px;
   line-height: 18px;
-  display: flex;
-  align-items: flex-end;
   letter-spacing: -0.0608696px;
   height: 15px;
   opacity: 1;
